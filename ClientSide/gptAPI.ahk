@@ -8,10 +8,10 @@ Tab::
     payload := A_Clipboard
     payload := StrReplace(payload, '"', '')
     http := ComObject("WinHttp.WinHttpRequest.5.1")
-    
+
     try {
         ; CHANGE THE API TO WHATEVER YOURE USING
-        http.Open("POST", 'http://192.168.1.152:5000/GPT', true)
+        http.Open("POST", 'GET YOUR OWN API >:(', true)
         http.SetRequestHeader("Content-Type", "application/json")
         
         jsonPayload := '{"text": "' . payload . '"}'
